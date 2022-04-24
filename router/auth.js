@@ -5,9 +5,9 @@ const userData = require("../model/userSchema");
 const bcrypt = require("bcryptjs");
 const authenticate = require("../middleware/authenticate");
 
-router.get("/api/notes", (req, res) => {
-    res.send(notes);    
-});
+// router.get("/api/notes", (req, res) => {
+//     res.send(notes);    
+// });
 
 // router.get("/api/notes/:id", (req, res) => {
 //     const note = notes.find((n) => n._id === req.params.id);
