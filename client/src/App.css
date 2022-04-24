@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.main_body {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/backgroundImage.jpg");
+  background-size: cover;
+  background-position: top; }
+
+.intro_button {
+  margin-top: 2rem; }
+
+button {
+  margin-right: 1rem; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.notes_body {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  background-image: linear-gradient(45deg, #d1e8ee, #b4eaf6, #fffdfd);
+  position: relative; }
+
+.note_item {
+  margin: 1rem auto; }
+
+.note_header {
+  display: flex;
+  align-self: center !important; }
+
+.input_note_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2.5rem; }
+  .input_note_div .input_note {
+    margin-right: 0.5rem;
+    width: 50%;
+    border: 1px solid #cac7c7;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: box-shadow 0.1s; }
+    .input_note_div .input_note:focus {
+      border: none;
+      outline: none;
+      box-shadow: 0 0 2px 2px #ffffff; }
+  .input_note_div .submit_button {
+    border-radius: 5rem !important; }
+
+.diaplay_div {
+  width: 57%;
+  margin: 0 auto; }
+  .diaplay_div .input_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 2px 5px #ffffff;
+    border: none;
+    margin: 1.5rem auto; }
+    .diaplay_div .input_content .card_body {
+      width: 80%;
+      text-align: left; }
+    .diaplay_div .input_content .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 20%; }
+      .diaplay_div .input_content .icons .edit {
+        color: #3d71e9;
+        cursor: pointer; }
+      .diaplay_div .input_content .icons .delete {
+        color: #fb6969;
+        cursor: pointer; }
+
+@media only screen and (max-width: 992px) {
+  .input_note {
+    width: 80% !important; }
+
+  .diaplay_div {
+    width: 100%; } }
+.login {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px); }
+
+.redirect span .link {
+  text-decoration: none; }
+  .redirect span .link:hover {
+    text-decoration: underline; }
+
+.register {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px); }
+
+.name_form_input {
+  text-transform: capitalize; }
+
+.my_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  background-image: linear-gradient(45deg, #d1e8ee, #b4eaf6, #fffdfd); }
+
+.profile_details {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3rem 1rem; }
+
+.edit_icon_div {
+  text-align: end;
+  margin: 0.5rem 1rem 0 0; }
+
+.image_div {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%; }
+  .image_div .image_container {
+    overflow: hidden;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 25rem;
+    border: 5px solid #fff; }
+    .image_div .image_container .profile_image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+
+.profile_form_details {
+  margin: 1rem 0;
+  transition: all 0.3s; }
+  .profile_form_details .custom_profile_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .profile_form_details .custom_profile_form .custom_group {
+      width: 80%; }
+    .profile_form_details .custom_profile_form .input_content {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0) !important;
+      border: none; }
+    .profile_form_details .custom_profile_form .input_content.active {
+      text-align: start;
+      background-color: #fff  !important;
+      border: 1px solid #808080; }
+    .profile_form_details .custom_profile_form .input_content.captialize,
+    .profile_form_details .custom_profile_form .input_content.active.captialize {
+      text-transform: capitalize; }
+
+@media only screen and (max-width: 992px) {
+  .profile_details {
+    width: 90%;
+    margin: 0.5rem 0; } }
+.edit_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); }
+
+.eidt_modal_inner {
+  position: sticky !important;
+  bottom: 40% !important;
+  top: 40%;
+  background-color: aliceblue;
+  width: 40%;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+  z-index: 2; }
+  .eidt_modal_inner Form {
+    display: flex;
+    flex-direction: row; }
+    .eidt_modal_inner Form .custom_text_area {
+      width: 85%; }
+    .eidt_modal_inner Form .modal_submit_btn {
+      width: 15%; }
+
+@media only screen and (max-width: 992px) {
+  .eidt_modal_inner {
+    width: 90%; }
+    .eidt_modal_inner .custom_text_area {
+      width: 80%; }
+    .eidt_modal_inner .modal_submit_btn {
+      width: 20%; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #777676; }
+
+/*# sourceMappingURL=App.css.map */

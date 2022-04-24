@@ -1,0 +1,18 @@
+@import "mixins";
+
+.main_body {
+  @include defaultPageDiaplay;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/backgroundImage.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.intro_button {
+  margin-top: 2rem;
+}
+
+button {
+  margin-right: 1rem;
+}

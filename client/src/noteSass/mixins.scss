@@ -1,0 +1,11 @@
+@mixin defaultPageDiaplay {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+
+@mixin defaultBackdround {
+  background: rgba(0,0,0, 0.3);
+  backdrop-filter: blur(5px);
+  background-image: linear-gradient(45deg, #d1e8ee, #b4eaf6, #fffdfd);
+}

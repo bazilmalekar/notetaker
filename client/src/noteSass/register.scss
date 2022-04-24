@@ -1,0 +1,9 @@
+@import "mixins";
+
+.register {
+  @include defaultPageDiaplay;
+}
+
+.name_form_input{
+  text-transform: capitalize;
+}
